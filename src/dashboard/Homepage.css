@@ -1,0 +1,60 @@
+*{
+    font-family: 'Popins',sans-serif;
+}
+.sidenav{
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: visible;
+}.main-content{
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: visible;
+}
+.head{
+    border-bottom: 1px solid #e5e5e5;
+}
+.right{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: right;
+
+}.left{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+th,td{
+    border: 1px solid #e5e5e5;
+    padding: 8px;
+}
+.table{
+    overflow: hidden;
+    overflow-x: visible;
+}
+.title button{
+    border: none;
+}
+.disabled{
+    color:#7c7b7b !important;
+}
+@media screen and (max-width:767px) {
+    .sidenav{
+        display: none;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .drops{
+        display: block !important;
+    }
+    form{
+        display: none;
+    }
+}
+.drops{
+    display: none;
+}
