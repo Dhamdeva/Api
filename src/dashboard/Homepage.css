@@ -58,3 +58,50 @@ th,td{
 .drops{
     display: none;
 }
+.days{
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: white;
+}
+.request{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}.request div{
+    border-bottom: 1px solid #e5e5e5;
+}
+.body-param{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+.body-param .body{
+    display: block;
+    margin-left: auto;
+    border: 1px solid #e5e5e5;
+}
+
+.fas{
+    display: block;
+    margin-left: auto;
+}
+.nav-pills img{
+    width: 20px;
+}
+.nav-pills h6{
+    color: black;
+}
+.curl{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}.curl button{
+    display: block;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.curl .post{
+    overflow: hidden;
+    overflow-x: visible;
+}
