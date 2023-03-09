@@ -26,9 +26,12 @@
     color: black;
     display: block;
 }
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
 
 th,td{
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding: 8px;
 }
 .table{
@@ -104,4 +107,8 @@ th,td{
 .curl .post{
     overflow: hidden;
     overflow-x: visible;
+}
+
+.ro{
+    border: 1px solid #e5e5e5;
 }

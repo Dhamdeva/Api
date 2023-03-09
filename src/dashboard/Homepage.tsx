@@ -187,7 +187,7 @@ export function Language(props:any){
                         <h6>Request</h6>
                         <button>Examples</button>
                     </div>
-                    <div className="post" >
+                    <div className="post">
                         1.curl --request POST \<br/>
                         2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
                         3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
@@ -195,7 +195,7 @@ export function Language(props:any){
                         5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
                         6.header'accept:application/json'<br/>
                     </div>
-                    <button><i className="fa-regular fa-copy mt-3"></i></button>
+                    <button ><i className="fa-regular fa-copy mt-3" ></i></button>
                 </div>
             </div>
             <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" >..3.</div>
