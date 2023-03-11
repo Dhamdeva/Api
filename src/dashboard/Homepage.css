@@ -26,9 +26,9 @@
     color: black;
     display: block;
 }
-/* tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #dddddd;
-  } */
+  }
 
 th,td{
     border: 2px solid #e5e5e5;
@@ -111,4 +111,17 @@ th,td{
 
 .ro{
     border: 1px solid #e5e5e5;
+}
+.partner{
+    color: #46b8da;
+    border-left: 3px solid #5bc0de;
+    background: #e3edf2;
+}
+
+.dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border: none;
 }

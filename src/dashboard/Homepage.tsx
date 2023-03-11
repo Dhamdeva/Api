@@ -24,8 +24,8 @@ export function Table(props:any){
 
 export function Head(props:any){
     return(
-        <div className="head">
-            <h2>{props.h2}</h2>
+        <div className="head ">
+            <h2 className="fw-bold">{props.h2}</h2>
             <p>{props.p}</p>
             <p><small>{props.p1}</small></p>
             <p>{props.p2}</p>
@@ -73,6 +73,49 @@ export function Navbar(props:any){
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/debitbalance">Cash Balance(Debit Balance)</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link disabled" >DMT</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="/dmtintroduction" role="button" >Introduction</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/dmtpostman">Postman Collection</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/dmtbanklist" >DMT BANK LIST</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="/dmtremitter" role="button" >Remitter</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/dmtqueryremitter">Query Remitter</a></li>
+                        <li><a className="dropdown-item" href="/dmtregisterremitter">Register Remitter</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="/dmtbeneficiary" role="button" >Beneficiary</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/dmtregisterbeneficiary">Register Beneficiary</a></li>
+                        <li><a className="dropdown-item" href="/dmtdeletebeneficiary">Delete Beneficiary</a></li>
+                        <li><a className="dropdown-item" href="/dmtfetchbeneficiary">Fetch Beneficiary</a></li>
+                        <li><a className="dropdown-item" href="/dmtfetchbeneficiaryby">Fetch Beneficiary by beneid</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="/dmttrans" role="button" >Transaction</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/dmtpennydrop">Penny Drop</a></li>
+                        <li><a className="dropdown-item" href="/dmttransaction">Transaction</a></li>
+                        <li><a className="dropdown-item" href="/dmttransactionstatus">Transaction Status</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="/dmtrefund" role="button" >Refund</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/dmtrefundotp">Refund OTP</a></li>
+                        <li><a className="dropdown-item" href="/dmtclaimrefund">Claim Refund</a></li>
+                    </ul>  
                 </li>
             </ul>
          </div>
@@ -187,7 +230,7 @@ export function Language(props:any){
                         <h6>Request</h6>
                         <button>Examples</button>
                     </div>
-                    <div className="post">
+                    <div className="post" >
                         1.curl --request POST \<br/>
                         2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
                         3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
@@ -195,15 +238,92 @@ export function Language(props:any){
                         5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
                         6.header'accept:application/json'<br/>
                     </div>
-                    <button ><i className="fa-regular fa-copy mt-3" ></i></button>
+                    <button ><i  className="fa-regular fa-copy mt-3"  ></i></button>
                 </div>
             </div>
-            <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" >..3.</div>
-            <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" >..1.</div>
-            <div className="tab-pane fade" id="pills-php" role="tabpanel" aria-labelledby="pills-php-tab" >..41.</div>
-            <div className="tab-pane fade" id="pills-python" role="tabpanel" aria-labelledby="pills-python-tab" >.5.1.</div>
-            
+            <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" >
+            <div className="curl p-3">
+                    <h6>CURL</h6>
+                    <div className="d-flex my-3">
+                        <h6>Request</h6>
+                        <button>Examples</button>
+                    </div>
+                    <div className="post" >
+                        1.curl --request POST \<br/>
+                        2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
+                        3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
+                        4.header'Content-Type:application/json'\<br/>
+                        5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
+                        6.header'accept:application/json'<br/>
+                    </div>
+                    <button ><i  className="fa-regular fa-copy mt-3"  ></i></button>
+                </div>
+            </div>
+            <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" >
+            <div className="curl p-3">
+                    <h6>CURL</h6>
+                    <div className="d-flex my-3">
+                        <h6>Request</h6>
+                        <button>Examples</button>
+                    </div>
+                    <div className="post" >
+                        1.curl --request POST \<br/>
+                        2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
+                        3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
+                        4.header'Content-Type:application/json'\<br/>
+                        5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
+                        6.header'accept:application/json'<br/>
+                    </div>
+                    <button ><i  className="fa-regular fa-copy mt-3"  ></i></button>
+                </div>
+            </div>
+            <div className="tab-pane fade" id="pills-php" role="tabpanel" aria-labelledby="pills-php-tab" >
+            <div className="curl p-3">
+                    <h6>CURL</h6>
+                    <div className="d-flex my-3">
+                        <h6>Request</h6>
+                        <button>Examples</button>
+                    </div>
+                    <div className="post" >
+                        1.curl --request POST \<br/>
+                        2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
+                        3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
+                        4.header'Content-Type:application/json'\<br/>
+                        5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
+                        6.header'accept:application/json'<br/>
+                    </div>
+                    <button ><i  className="fa-regular fa-copy mt-3"  ></i></button>
+                </div>
+            </div>
+            <div className="tab-pane fade" id="pills-python" role="tabpanel" aria-labelledby="pills-python-tab" >
+            <div className="curl p-3">
+                    <h6>CURL</h6>
+                    <div className="d-flex my-3">
+                        <h6>Request</h6>
+                        <button>Examples</button>
+                    </div>
+                    <div className="post" >
+                        1.curl --request POST \<br/>
+                        2.urlhttps://paysprint.in/serviceapi/api/v1/service/balance/balance/mainbalance\<br/>
+                        3.header'Authorisedkey:MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ='\<br/>
+                        4.header'Content-Type:application/json'\<br/>
+                        5.header'Token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQQVlTUFJJTlQiLCJ0aW1lc3RhbXAiOjE2MTAwMjYzMzgsInBhcnRuZXJJZCI6IlBTMDAxIiwicHJvZHVjdCI6IldBTExFVCIsInJlcWlkIjoxNjEwMDI2MzM4fQ.buzD40O8X_41RmJ0PCYbBYx3IBlsmNb9iVmrVH9Ix64'\<br/>
+                        6.header'accept:application/json'<br/>
+                    </div>
+                    <button ><i  className="fa-regular fa-copy mt-3"  ></i></button>
+                </div>
+            </div> 
             </div>
             </div>
+    )
+}
+
+export function Partner(props:any){
+    return(
+        <div className="partner p-3 my-3">
+            <h5><i  className="fa-solid fa-book p-1"></i>PARTNER SHOULD KNOW !</h5>
+            <p>{props.p}</p>
+            <p>{props.p1}</p>
+        </div>
     )
 }

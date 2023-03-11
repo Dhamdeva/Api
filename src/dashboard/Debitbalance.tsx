@@ -1,12 +1,12 @@
 import { Bodyparams, Head, Language, Request, Response, Tableheader, Tabler } from "./Homepage";
 
-export function Creditbalance(){
+export function Debitbalance(){
     return(
         <div className="container-fluid">
             <div className="row">
                 <div className="col-md-7">
                     <Head
-                    h2={"Main Balance(Credit Balance)"}
+                    h2={"Cash Balance(Credit Balance)"}
                     p1={"https://paype.in/service-api/api/v1/service/balance/balance/mainbalance"}
                     p2={"main balance"}
                     />
@@ -86,8 +86,8 @@ export function Creditbalance(){
                     <Language />
                 </div>
                 <div className="col-md-7">
-                    <a className="left" href="/uatcrendentials"><i className="fa-solid fa-arrow-left-long"></i>UAT Credentials</a>
-                    <a className="right" href="/debitbalance">Cash Balance(Credit Balance)<i className="fa-solid fa-arrow-right-long"></i></a> 
+                    <a className="left" href="/creditbalance"><i className="fa-solid fa-arrow-left-long"></i>Main Balance(Credit Balance)</a>
+                    <a className="right" href="/dmtintroduction"> Introduction<i className="fa-solid fa-arrow-right-long"></i></a> 
                 </div>
             </div>
         </div>
