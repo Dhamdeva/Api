@@ -1,12 +1,12 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Table, Tableheader, Tabler } from "./Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler } from "../../home/Homepage";
 
-export function Dmttransaction(){
+export function Dmtdeletebeneficiary(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="row">
-                <div className="col-sm-7">
+                <div className="col-sm-7 ">
                     <Head
-                    h2={"Transaction"}
+                    h2={"Delete Beneficiary"}
                     p1={"https://paysprint.in/service-api/api/v1/service/dmt/remitter/queryremitter"}
                     />
                     <div className="head my-4">
@@ -72,40 +72,6 @@ export function Dmttransaction(){
                                 </tbody>
                             </table>
                         </div>
-                        <div className="table my-4">
-                            <table>
-                                <Table
-                                th={"txn_status"}
-                                th1={"value"}
-                                th2={"Description"}
-                                />
-                                <Tabler
-                                td={"0"}
-                                td1={"Failed and Refunded"}
-                                td2={"Transaction is failed. Amount and charges deducted is reversed to wallet."}
-                                />
-                                <Tabler
-                                td={"1"}
-                                td1={"Transaction Successfull"}
-                                td2={"Transaction Successfull"}
-                                />
-                                <Tabler
-                                td={"2"}
-                                td1={"Transaction In Process"}
-                                td2={"Perform Transaction status method to get actual status in 30 min interval"}
-                                />
-                                <Tabler
-                                td={"3"}
-                                td1={"Transaction Sent To Bank"}
-                                td2={"Perform Transaction status method to get actual status in 30 min interval"}
-                                />
-                                <Tabler
-                                td={"4"}
-                                td1={"Transaction on Hold	"}
-                                td2={"Perform Transaction status method to get actual status in TAT(T+3) interval"}
-                                />
-                            </table>
-                        </div>
                         <h6 className="fw-bold">BODY PARAMS</h6>
                         <Bodyparams
                         h61={"body"}
@@ -139,8 +105,8 @@ export function Dmttransaction(){
                     <Language />
                 </div>
                 <div className="col-md-7">
-                    <a className="left" href="/dmtpennydrop"><i className="fa-solid fa-arrow-left-long"></i>Penny Drop</a>
-                    <a className="right" href="/dmttransactionstatus">Transaction Status<i className="fa-solid fa-arrow-right-long"></i></a> 
+                    <a className="left" href="/dmtregisterbeneficiary"><i className="fa-solid fa-arrow-left-long"></i>Register Beneficiary</a>
+                    <a className="right" href="/dmtfetchbeneficiary">Fetch Beneficiary<i className="fa-solid fa-arrow-right-long"></i></a> 
                 </div>
                 </div>
             </div>

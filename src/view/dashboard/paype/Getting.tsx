@@ -1,8 +1,8 @@
-import { Head } from "./Homepage";
+import { Head } from "../home/Homepage";
 
 export function Getting(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="col-md-8">
                 <Head
                 h2={"Getting Started"}

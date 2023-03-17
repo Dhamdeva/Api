@@ -1,8 +1,8 @@
-import { Head, Tableofcontent } from "./Homepage";
+import { Head, Tableofcontent } from "../home/Homepage";
 
 export function Authentication(){
     return(
-        <div className="conatiner-fluid">
+        <div className="conatiner-fluid p-0">
             <div className="row">
                 <div className="col-md-8">
                     <Head 

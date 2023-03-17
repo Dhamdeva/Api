@@ -1,8 +1,8 @@
-import { Head, Partner } from "./Homepage";
+import { Head, Partner } from "../../home/Homepage";
 
 export function Dmtintroduction(){
     return(
-        <div className="conatiner-fluid">
+        <div className="conatiner-fluid p-0">
             <div className="col-md-8">
                 <Head
                 h2={"INTRODUCTION"}

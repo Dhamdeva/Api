@@ -1,8 +1,8 @@
-import { Bodyparams, Head, Language, Request, Response, Tableheader, Tabler } from "./Homepage";
+import { Bodyparams, Head, Language, Request, Response, Tableheader, Tabler } from "../home/Homepage";
 
 export function Debitbalance(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="row">
                 <div className="col-md-7">
                     <Head

@@ -1,9 +1,9 @@
-import { Head } from "./Homepage";
+import { Head } from "../../home/Homepage";
 
 export function Dmtremitter(){
     return(
-        <div className="container-fluid">
-            <div className="col-md-8">
+        <div className="container-fluid p-0">
+            <div className="col-md-8 ">
                 <Head
                 h2={"Remitter"}
                 />

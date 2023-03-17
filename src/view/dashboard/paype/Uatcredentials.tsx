@@ -1,9 +1,9 @@
-import { Head, Table, Tablehead } from "./Homepage";
-import './Homepage.css';
+import { Head, Table, Tablehead } from "../home/Homepage";
+
 
 export function Uatcredentails(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="col-md-8">
                 <Head
                 h2={"UAT Credentials"}

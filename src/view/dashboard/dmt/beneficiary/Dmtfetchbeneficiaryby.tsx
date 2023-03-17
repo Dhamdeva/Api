@@ -1,12 +1,12 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler } from "./Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler } from "../../home/Homepage";
 
-export function Dmtdeletebeneficiary(){
+export function Dmtfetchbeneficiaryby(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="row">
                 <div className="col-sm-7">
                     <Head
-                    h2={"Delete Beneficiary"}
+                    h2={"Fetch Beneficiary by beneid"}
                     p1={"https://paysprint.in/service-api/api/v1/service/dmt/remitter/queryremitter"}
                     />
                     <div className="head my-4">
@@ -105,8 +105,8 @@ export function Dmtdeletebeneficiary(){
                     <Language />
                 </div>
                 <div className="col-md-7">
-                    <a className="left" href="/dmtregisterbeneficiary"><i className="fa-solid fa-arrow-left-long"></i>Register Beneficiary</a>
-                    <a className="right" href="/dmtfetchbeneficiary">Fetch Beneficiary<i className="fa-solid fa-arrow-right-long"></i></a> 
+                    <a className="left" href="/dmtfetchbeneficiary"><i className="fa-solid fa-arrow-left-long"></i>Fetch Beneficiary</a>
+                    <a className="right" href="/dmttrans">Transaction<i className="fa-solid fa-arrow-right-long"></i></a> 
                 </div>
                 </div>
             </div>

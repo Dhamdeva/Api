@@ -1,12 +1,12 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler } from "./Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response, Table, Tableheader, Tabler } from "../../home/Homepage";
 
-export function Dmtfetchbeneficiaryby(){
+export function Dmtclaimrefund(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="row">
                 <div className="col-sm-7">
                     <Head
-                    h2={"Fetch Beneficiary by beneid"}
+                    h2={"Claim Refund"}
                     p1={"https://paysprint.in/service-api/api/v1/service/dmt/remitter/queryremitter"}
                     />
                     <div className="head my-4">
@@ -32,42 +32,33 @@ export function Dmtfetchbeneficiaryby(){
                                     <Tabler
                                     td={"2"}
                                     td1={"200"}
-                                    td2={"0"}
-                                    td3={"Remitter not registered OTP sent for new registration.(check response_code=0 and isset(stateresp) )"}/>
+                                    td2={"2"}
+                                    td3={"Transaction not found or already refunded."}/>
+                                    <Tabler
+                                    td={"3"}
+                                    td1={"412"}
+                                    td2={"3"}
+                                    td3={"No record found."}/>
+                                    
                                     <Tabler
                                     td={"4"}
-                                    td1={"200"}
-                                    td2={"0"}
-                                    td3={"Unable to get remitter details. Please try again later"}/>
-                                    <Tabler
-                                    td={"5"}
-                                    td1={"401"}
-                                    td2={"5"}
-                                    td3={"Mobile Number is not allowed to do remittance."}/>
-                                    <Tabler
-                                    td={"7"}
                                     td1={"406"}
-                                    td2={"8"}
+                                    td2={"4"}
                                     td3={"Validation Error"}/>
                                     <Tabler
-                                    td={"8"}
-                                    td1={"404"}
-                                    td2={"12"}
-                                    td3={"DMT service or preference is not active for this account."}/>
-                                    <Tabler
-                                    td={"9"}
+                                    td={"5"}
                                     td1={"412"}
-                                    td2={"9"}
+                                    td2={"5"}
                                     td3={"Unable to process query remitter request."}/>
                                     <Tabler
-                                    td={"10"}
+                                    td={"6"}
                                     td1={"401"}
-                                    td2={"10"}
+                                    td2={"6"}
                                     td3={"Invalid JWT Token sent in Header."}/>
                                     <Tabler
-                                    td={"11"}
+                                    td={"7"}
                                     td1={"401"}
-                                    td2={"11"}
+                                    td2={"7"}
                                     td3={"Authentication failed."}/>
                                 </tbody>
                             </table>
@@ -78,11 +69,6 @@ export function Dmtfetchbeneficiaryby(){
                         p={"string"}
                          />
                          <h6 className="fw-bold mt-3">HEADERS</h6>
-                         <Bodyparams
-                        h61={"body"}
-                        p={"string"}
-                        place={"MzNkYzllOGJmZGVhNWRkZTc1YTgzM2Y5ZDFlY2EyZTQ"}
-                         />
                          <Bodyparams
                         h61={"body"}
                         p={"string"}
@@ -105,8 +91,8 @@ export function Dmtfetchbeneficiaryby(){
                     <Language />
                 </div>
                 <div className="col-md-7">
-                    <a className="left" href="/dmtfetchbeneficiary"><i className="fa-solid fa-arrow-left-long"></i>Fetch Beneficiary</a>
-                    <a className="right" href="/dmttrans">Transaction<i className="fa-solid fa-arrow-right-long"></i></a> 
+                    <a className="left" href="/dmtrefundotp"><i className="fa-solid fa-arrow-left-long"></i>Refund OTP</a>
+                    <a className="right" href="/onboardingweb">Onboarding Web<i className="fa-solid fa-arrow-right-long"></i></a> 
                 </div>
                 </div>
             </div>

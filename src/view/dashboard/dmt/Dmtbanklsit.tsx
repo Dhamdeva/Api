@@ -1,8 +1,8 @@
-import { Head, Partner } from "./Homepage";
+import { Head, Partner } from "../home/Homepage";
 
 export function Dmtbanklist(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div className="col-md-8">
                 <Head
                 h2={"DMT BANK LIST"}
