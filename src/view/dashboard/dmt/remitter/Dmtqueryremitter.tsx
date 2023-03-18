@@ -1,4 +1,4 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler } from "../../home/Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response, Tableheader, Tabler, Tryit } from "../../home/Homepage";
 
 export function Dmtqueryremitter(){
     return(
@@ -103,6 +103,7 @@ export function Dmtqueryremitter(){
                 <div className="col-md-5">
                     <h6>LANGUAGE</h6>
                     <Language />
+                    <Tryit />
                 </div>
                 <div className="col-md-7">
                     <a className="left" href="/dmtremitter"><i className="fa-solid fa-arrow-left-long"></i>Remitter</a>

@@ -1,6 +1,16 @@
 *{
     font-family: 'Popins',sans-serif;
 }
+/* ******************************************** */
+.dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border: none;
+}
+
+/*****************Side-Nav Main-Content********************************/
 .sidenav{
     width: 20%;
     height: 100vh;
@@ -12,20 +22,29 @@
     overflow: hidden;
     overflow-y: visible;
 }
+/************************************************* */
 .head{
     border-bottom: 1px solid #e5e5e5;
 }
+/*************************************************/
 .right{
     text-decoration: none;
     color: black;
     display: block;
     text-align: right;
 
-}.left{
+}
+@media screen and (max-width:767px) {
+    .right{
+        text-align: left;
+    }
+}
+.left{
     text-decoration: none;
     color: black;
     display: block;
 }
+/**********************************************/
 tr:nth-child(even) {
     background-color: #dddddd;
   }
@@ -41,6 +60,7 @@ th,td{
 .title button{
     border: none;
 }
+/*************************************************/
 .disabled{
     color:#7c7b7b !important;
 }
@@ -61,6 +81,7 @@ th,td{
 .drops{
     display: none;
 }
+/***********************************************/
 .days{
     display: block;
     margin-left: auto;
@@ -73,26 +94,41 @@ th,td{
 }.request div{
     border-bottom: 1px solid #e5e5e5;
 }
+/********************************************/
 .body-param{
     border: 1px solid #e5e5e5;
     border-radius: 10px;
 }
-.body-param .body{
+.body-param div{
     display: block;
-    margin-left: auto;
-    border: 1px solid #e5e5e5;
+    margin-left: auto;  
 }
-
+@media screen and (max-width:767px) {
+    .body-param div{
+        display: block;
+        margin-left: 0px;
+    }
+    .body-param div input{
+        width: 120%;
+    }   
+}
+/********************************************/
 .fas{
     display: block;
     margin-left: auto;
 }
+/********************************************/
 .nav-pills img{
-    width: 20px;
+    width: 15px;
 }
 .nav-pills h6{
     color: black;
 }
+ .language-dropdown .dropdown-item .nav-link{
+    width: 300px !important;
+    height: 35px;
+} 
+
 .curl{
     background-color: black;
     color: white;
@@ -117,11 +153,21 @@ th,td{
     border-left: 3px solid #5bc0de;
     background: #e3edf2;
 }
-
-.dropdown-menu{
-    display: none;
+.tryit{
+    border: 1px solid #e3edf2;
 }
-.dropdown:hover .dropdown-menu {
+.tryit .exam{
+    border:none;
+    background-color: white;
     display: block;
+    margin-left: auto;
+}
+
+.tryit .result{
     border: none;
+    background-color: white;
+    font-size: 14px;
+}
+.kbd{
+    color: black;
 }

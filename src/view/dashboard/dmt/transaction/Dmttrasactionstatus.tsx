@@ -1,4 +1,4 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Table, Tableheader, Tabler } from "../../home/Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response, Table, Tableheader, Tabler, Tryit } from "../../home/Homepage";
 
 export function Dmttransactionstatus(){
     return(
@@ -78,6 +78,7 @@ export function Dmttransactionstatus(){
                 <div className="col-md-5">
                     <h6>LANGUAGE</h6>
                     <Language />
+                    <Tryit />
                 </div>
                 <div className="col-md-7">
                     <a className="left" href="/dmttransaction"><i className="fa-solid fa-arrow-left-long"></i>Transaction</a>

@@ -1,5 +1,5 @@
 import MainNavigator from "../../../controller/MainNavigator";
-import { Navbar } from "../home/Homepage";
+import { Navbar } from "../dashboard/Navbar";
 
 
 export function Dashboard(){

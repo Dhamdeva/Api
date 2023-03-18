@@ -1,4 +1,4 @@
-import { Bodyparams, Head, Language, Partner, Request, Response,  Tablehead, Tableheader, Tabler } from "../../home/Homepage";
+import { Bodyparams, Head, Language, Partner, Request, Response,  Table,  Tablehead, Tableheader, Tabler, Tryit } from "../../home/Homepage";
 
 export function Dmttransaction(){
     return(
@@ -79,27 +79,27 @@ export function Dmttransaction(){
                                 th1={"value"}
                                 th2={"Description"}
                                 />
-                                <Tabler
+                                <Table
                                 td={"0"}
                                 td1={"Failed and Refunded"}
                                 td2={"Transaction is failed. Amount and charges deducted is reversed to wallet."}
                                 />
-                                <Tabler
+                                <Table
                                 td={"1"}
                                 td1={"Transaction Successfull"}
                                 td2={"Transaction Successfull"}
                                 />
-                                <Tabler
+                                <Table
                                 td={"2"}
                                 td1={"Transaction In Process"}
                                 td2={"Perform Transaction status method to get actual status in 30 min interval"}
                                 />
-                                <Tabler
+                                <Table
                                 td={"3"}
                                 td1={"Transaction Sent To Bank"}
                                 td2={"Perform Transaction status method to get actual status in 30 min interval"}
                                 />
-                                <Tabler
+                                <Table
                                 td={"4"}
                                 td1={"Transaction on Hold	"}
                                 td2={"Perform Transaction status method to get actual status in TAT(T+3) interval"}
@@ -137,6 +137,7 @@ export function Dmttransaction(){
                 <div className="col-md-5">
                     <h6>LANGUAGE</h6>
                     <Language />
+                    <Tryit />
                 </div>
                 <div className="col-md-7">
                     <a className="left" href="/dmtpennydrop"><i className="fa-solid fa-arrow-left-long"></i>Penny Drop</a>

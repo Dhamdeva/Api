@@ -1,15 +1,46 @@
-import { Bodyparams, Head, Language, Partner, Request, Response, Table, Tableheader, Tabler, Tryit } from "../../home/Homepage";
+import { Bodyparams, Head, Kbd, Language, Partner, Request, Response, Tableheader, Tabler, Tryit } from "../home/Homepage";
 
-export function Dmtrefundotp(){
+export function Onboardingweb(){
     return(
         <div className="container-fluid p-0">
             <div className="row">
-                <div className="col-sm-7">
-                    <Head
-                    h2={"Refund OTP"}
-                    p1={"https://paysprint.in/service-api/api/v1/service/dmt/remitter/queryremitter"}
-                    />
-                    <div className="head my-4">
+            <div className="col-md-7">
+            
+            <Head
+            h2={"Onboarding Web"}
+            p1={"https://paysprint.in/service-api/api/v1/service/onboard/onboardnew/getonboardurl"}
+            />
+            <p>Live URL:https://api.paysprint.in/api/v1/service/onboard/onboard/getonboardurl</p>
+            <p>Onboarding Process Used for Kyc process for AEPS services.</p>
+            <p>UAT OTP -: 999999</p>
+            <p>DOCUMENT REQUIREMNT :</p>
+            <p>1- Merchant Original Pancard image.</p>
+            <p>2- Merchant Original AADHAR IMAGE image.</p>
+            <p>3- Onboarding STATE SHOULD match Aadhaar address.</p>
+            <p>API PARTNER INTEGRATION REQUIREMENT :</p>
+            <p>1- For onboarding you have to first setup transaction callback URL in PORTAL credential section.</p>
+            <p>Use: transaction callback URL is to inform partner to deduction amount from merchant as a one time onboarding charges for verification.</p>
+            <p>Description:</p>
+            <kbd className="head my-2 kbd">
+                <Kbd
+                p={"EXAMPLE URL= POST REQUEST FROM PAYSRINT"}
+                p1={"TO https://{{transaction_callback_URL}}"}
+                p2={"content-type => application/json"}
+                p3={'{"event": "MERCHANT_ONBOARDING",'}
+                p4={'"param": {"merchant_id":"RD3933",'}
+                p5={'"partner_id":"PS002",'}
+                p6={'"request_id":"322432",'}
+                p7={'"amount":"10"'}
+                p8={"},"}
+                p9={'"param_inc": "wqewqewqe723432432"}'}
+                p10={"param_enc is encrypted value of param using JWT token provided by paysprint RESPONSE Should be in case of"}
+                p11={"success"}
+                p12={'{"status":200,"message":"Transaction completed successfully"}'}
+                p13={"FAILED"}
+                p14={'{"status":400,"message":"Transaction Failed"}'}
+                />
+            </kbd>
+            <div className="head my-4">
                         <Request/>
                         <Partner 
                         p={"1 - With this API we can check Remitter mobile no. is already registered with our database, if yes then response system will provide remitter details. If remitter mobile no. is not queried before, then system will hit an OTP on remitter mobile no. to initiate for the registration process."}
@@ -63,6 +94,20 @@ export function Dmtrefundotp(){
                                 </tbody>
                             </table>
                         </div>
+                        <p>LIVE URL : BASEURL /api/v1/service/onboard/onboard/getonboardurl</p>
+                        <h6>CALLBACK RESPONSE OF ONBOARDING ON SUCCESS OR Back to home</h6>
+                        <p>After Decryption</p>
+                        <Kbd 
+                        p={'{'}
+                        p1={'"refno": "16268661725702",'}
+                        p2={'"txnid": "1477415",'}
+                        p3={'"status": "1",'}
+                        p4={'"partnerid": "PS00XX","merchantcode": "RXXXX","is_icici_kyc":"1","bank": {"Bank1": 1,'}
+                        p5={'"Bank2": 0,'}
+                        p6={'"Bank3": 0'}
+                        p7={'}'}
+                        p8={'}'}
+                        />
                         <h6 className="fw-bold">BODY PARAMS</h6>
                         <Bodyparams
                         h61={"body"}
@@ -84,19 +129,19 @@ export function Dmtrefundotp(){
                             <Response />
                             <Response />
                          </div>
+                         </div>
+                         </div>
+                         <div className="col-md-5">
+                            <h6>LANGUAGE</h6>
+                            <Language />
+                            <Tryit />
+                        </div>
+                        <div className="col-md-7">
+                            <a className="left" href="/dmtclaimrefund"><i className="fa-solid fa-arrow-left-long"></i>Claim Refund</a>
+                            <a className="right" href="/onboardingmobile">On Boarding Mobile SDK<i className="fa-solid fa-arrow-right-long"></i></a> 
+                        </div>
                     </div>
-                </div>
-                <div className="col-md-5">
-                    <h6>LANGUAGE</h6>
-                    <Language />
-                    <Tryit />
-                </div>
-                <div className="col-md-7">
-                    <a className="left" href="/dmtrefund"><i className="fa-solid fa-arrow-left-long"></i>Refund</a>
-                    <a className="right" href="/dmtclaimrefund">Claim Refund<i className="fa-solid fa-arrow-right-long"></i></a> 
-                </div> 
-                </div>
-            </div>
-        
+                    
+        </div>
     )
 }

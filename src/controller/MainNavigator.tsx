@@ -23,6 +23,7 @@ import { Dmtpennydrop } from "../view/dashboard/dmt/transaction/Dmtpennydrop";
 import { Dmttrans } from "../view/dashboard/dmt/transaction/Dmttrans";
 import { Dmttransaction } from "../view/dashboard/dmt/transaction/Dmttransaction";
 import { Dmttransactionstatus } from "../view/dashboard/dmt/transaction/Dmttrasactionstatus";
+import { Onboardingweb } from "../view/dashboard/onboarding/Onboardingweb";
 
 function MainNavigator() {
   return (
@@ -51,6 +52,7 @@ function MainNavigator() {
         <Route path="/dmtrefund" element={<Dmtrefund />} />
         <Route path="/dmtrefundotp" element={<Dmtrefundotp />} />
         <Route path="/dmtclaimrefund" element={<Dmtclaimrefund />} />
+        <Route path="/onboardingweb" element={<Onboardingweb />} />
       </Routes>
     </div>
   );

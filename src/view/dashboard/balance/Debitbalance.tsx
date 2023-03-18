@@ -1,4 +1,4 @@
-import { Bodyparams, Head, Language, Request, Response, Tableheader, Tabler } from "../home/Homepage";
+import { Bodyparams, Head, Language, Request, Response, Tableheader, Tabler, Tryit } from "../home/Homepage";
 
 export function Debitbalance(){
     return(
@@ -84,6 +84,7 @@ export function Debitbalance(){
                 <div className="col-md-5">
                     <h6>LANGUAGE</h6>
                     <Language />
+                    <Tryit />
                 </div>
                 <div className="col-md-7">
                     <a className="left" href="/creditbalance"><i className="fa-solid fa-arrow-left-long"></i>Main Balance(Credit Balance)</a>
