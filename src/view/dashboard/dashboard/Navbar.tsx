@@ -12,7 +12,7 @@ export function Navbar(){
                     <a className="nav-link" href="/authentication">Authentication</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/uatcredentails">UAT Credentials</a>
+                    <a className="nav-link" href="/uatcredentials">UAT Credentials</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link disabled" >Balance</a>
@@ -71,6 +71,67 @@ export function Navbar(){
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/onboardingweb">Onboarding Web</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/onboardingtransaction">Onboarding Transaction Callback</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/onboardingmobile">Onboarding Mobile Sdk</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/onboardingstatus">Onboarding Status Check for pipe wise</a>
+                </li>
+                <li className="nav-item disabled">
+                    <a className="nav-link" >AEPS</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/aepsrdservice">RD Service</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/aepsencryption">Encryption Body Technique</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepsenquiry" role="button" >Enquiry</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepsenquiryaeps">Enquiry</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepswithdrawl" role="button" >Withdrawl</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepswithdraw">Withdraw</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepsministatement" role="button" >Ministatement</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepsministatementaeps">Mini Statement</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link disabled" href="/aepsenquiry" role="button" >Bank List</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepsbanklist">Bank list</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepswithdrawltransaction" role="button" >Withdrawl transaction status</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/cashwithdrawtransactionstatus">Cash Withdraw transaction status query</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepswithdrawthreewayrecon" role="button" >Withdraw Three Way Recon</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepswithdrawthreeway">Withdraw Three Way</a></li>
+                    </ul>  
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link " href="/aepsaadharpay" role="button" >Aadhar Pay</a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/aepsaadharpayaeps">Aadhar Pay</a></li>
+                        <li><a className="dropdown-item" href="/aepsaadharpaytransaction">Aadhar pay transaction status query</a></li>
+                    </ul>  
                 </li>
             </ul>
          </div>

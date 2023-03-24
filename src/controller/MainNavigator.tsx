@@ -24,6 +24,25 @@ import { Dmttrans } from "../view/dashboard/dmt/transaction/Dmttrans";
 import { Dmttransaction } from "../view/dashboard/dmt/transaction/Dmttransaction";
 import { Dmttransactionstatus } from "../view/dashboard/dmt/transaction/Dmttrasactionstatus";
 import { Onboardingweb } from "../view/dashboard/onboarding/Onboardingweb";
+import { Onboardingtransaction } from "../view/dashboard/onboarding/Onboaringtransaction";
+import { Onboardingmobile } from "../view/dashboard/onboarding/Onboardingmobile";
+import { Onboardingstatus } from "../view/dashboard/onboarding/Onboardingstatus";
+import { Rdservice } from "../view/dashboard/aeps/Rdservice";
+import { Encryptionbodytechnique } from "../view/dashboard/aeps/Encryptionbodytechnique";
+import { Aepsenquiry } from "../view/dashboard/aeps/enquiry/Aepsenquiry";
+import { Aepsenquiryaeps } from "../view/dashboard/aeps/enquiry/Aepsenquiryaeps";
+import { Aepswithdrawl } from "../view/dashboard/aeps/withdrawl/Aepswithdrawl";
+import { Aepsministatement } from "../view/dashboard/aeps/ministatement/Aepsministatement";
+import { Aepsministatementaeps } from "../view/dashboard/aeps/ministatement/Aepsministatementaeps";
+import { Aepsbanklist } from "../view/dashboard/aeps/banklist/Aepsbanklist";
+import { Withdrawltransactionstatus } from "../view/dashboard/aeps/withdrawltransaction/Withdrawltransactionstatus";
+import { Cashwithdrawtransactionstatus } from "../view/dashboard/aeps/withdrawltransaction/Cashwithdrawtransactionstatus";
+import { Aepswithdraw } from "../view/dashboard/aeps/withdrawl/Aepswithdraw";
+import { Aepswithdrawthreewayrecon } from "../view/dashboard/aeps/withdrawthreewayrecon/Aepswithdrawthreewayrecon";
+import { Aepswithdrawthreeway } from "../view/dashboard/aeps/withdrawthreewayrecon/Aepswithdrawthreeway";
+import { Aepsaadharpay } from "../view/dashboard/aeps/aadharpay/Aepsaadharpay";
+import { Aepsaadharpayaeps } from "../view/dashboard/aeps/aadharpay/Aepsaadharpayaeps";
+import { Aepsaadharpaytransaction } from "../view/dashboard/aeps/aadharpay/Aepsaadharpaytransaction";
 
 function MainNavigator() {
   return (
@@ -31,7 +50,7 @@ function MainNavigator() {
       <Routes>
         <Route path="/" element={<Getting />} />
         <Route path="/authentication" element={<Authentication />} />
-        <Route path="/uatcredentails" element={<Uatcredentails />} />
+        <Route path="/uatcredentials" element={<Uatcredentails />} />
         <Route path="/creditbalance" element={<Creditbalance />} />
         <Route path="/debitbalance" element={<Debitbalance />} />
         <Route path="/dmtintroduction" element={<Dmtintroduction />} />
@@ -53,6 +72,25 @@ function MainNavigator() {
         <Route path="/dmtrefundotp" element={<Dmtrefundotp />} />
         <Route path="/dmtclaimrefund" element={<Dmtclaimrefund />} />
         <Route path="/onboardingweb" element={<Onboardingweb />} />
+        <Route path="/onboardingtransaction" element={<Onboardingtransaction />} />
+        <Route path="/onboardingmobile" element={<Onboardingmobile />} />
+        <Route path="/onboardingstatus" element={<Onboardingstatus />} />
+        <Route path="/aepsrdservice" element={<Rdservice />} />
+        <Route path="/aepsencryption" element={<Encryptionbodytechnique />} />
+        <Route path="/aepsenquiry" element={<Aepsenquiry />} />
+        <Route path="/aepsenquiryaeps" element={<Aepsenquiryaeps />} />
+        <Route path="/aepswithdrawl" element={<Aepswithdrawl />} />
+        <Route path="/aepswithdraw" element={<Aepswithdraw />} />
+        <Route path="/aepsministatement" element={<Aepsministatement />} />
+        <Route path="/aepsministatementaeps" element={<Aepsministatementaeps />} />
+        <Route path="/aepsbanklist" element={<Aepsbanklist />} />
+        <Route path="/aepswithdrawltransaction" element={<Withdrawltransactionstatus />} />
+        <Route path="/cashwithdrawtransactionstatus" element={<Cashwithdrawtransactionstatus />} />
+        <Route path="/aepswithdrawthreewayrecon" element={<Aepswithdrawthreewayrecon />} />
+        <Route path="/aepswithdrawthreeway" element={<Aepswithdrawthreeway />} />
+        <Route path="/aepsaadharpay" element={<Aepsaadharpay />} />
+        <Route path="/aepsaadharpayaeps" element={<Aepsaadharpayaeps />} />
+        <Route path="/aepsaadharpaytransaction" element={<Aepsaadharpaytransaction />} />
       </Routes>
     </div>
   );

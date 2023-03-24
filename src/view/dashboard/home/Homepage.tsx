@@ -54,7 +54,7 @@ export function Tableofcontent(props:any){
 }
 
 
-export function Request(_props:any){
+export function Request(props:any){
     return(
         <div>
             <h6><small> YOUR REQUEST HISTORY </small></h6>
@@ -111,7 +111,7 @@ export function Tabler(props:any){
     )
 }
 
-export function Response(_props:any){
+export function Response(props:any){
     return(
         <div className="d-flex flex-wrap body-param p-2">
             <i className="fa-solid fa-circle"></i>

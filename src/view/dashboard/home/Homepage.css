@@ -32,11 +32,14 @@
     color: black;
     display: block;
     text-align: right;
+    position: relative;
+    top:-25px;
 
 }
 @media screen and (max-width:767px) {
     .right{
         text-align: left;
+        top: 25px;
     }
 }
 .left{
@@ -170,4 +173,10 @@ th,td{
 }
 .kbd{
     color: black;
+}
+
+
+.code{
+    height: 500px;
+    overflow: auto;
 }

@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 import { Dashboard } from './view/dashboard/dashboard/Dashboard';
 import './view/dashboard/home/Homepage.css';
+import { Form } from './view/dashboard/Finomatm/Form';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
